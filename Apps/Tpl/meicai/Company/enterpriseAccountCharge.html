@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>企业账户充值1</title>
+	<link rel="stylesheet" href="css/newmeicai.css" type="text/css" charset="gb2312" />
+	<script type="text/javascript" src="js/newmeicai.js"></script>
+</head>
+<body>
+<div id="container">
+	<div class="kefu_top">客服：400-800-8050</div>
+	<div id="header" class="header_bg">
+		<div class="header_top">		
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" /><span>美才网</span></a>
+			</div>
+			<ul class="head_ul">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="meicaiku.html">美才库</a></li>
+				<li class="dianbo"><a href="#">点拨</a><img src="images/sirenzhiku.png" class="sirenzhiku" /></li>
+				<li><a href="mentorApply.html">签约导师</a></li>
+			</ul>
+			<div class="head_yonghu">			
+				<div class="yonghu">
+		            <a href="enterpriseInfoA.html">
+		            	<img src="images/yonghutubiao.png"><span>15527502180</span>
+		            </a>
+				</div>
+		    	<ul class="xiala">
+		    		<li><img src="images/xiala.png" />
+		    		    <ul id="xialamenu">
+			            	<li><a href="enterpriseTalentOrder.html">人才订单</a></li>
+			            	<li><a href="enterpriseSerOrderA.html">服务订单</a></li>
+			            	<li><a href="enterpriseAccount.html">账户设置</a></li>
+			            	<li><a href="enterpriseCollect.html">美才收藏</a></li>
+			            	<li><a href="login.html">退出账号</a></li>
+			            </ul>
+		    		</li>
+		    	</ul>
+		    </div>
+		</div>
+	</div>
+	<!--header end-->
+	<div id="main">
+		<div class="nav">
+			<ul id="nav">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="meicaiku.html">美才库</a></li>
+				<li><a href="#">助理</a></li>
+				<li><a href="#">秘书</a></li>
+				<li><a href="#">文员</a></li>
+				<li><a href="#">市场</a></li>
+				<li><a href="#">销售</a></li>
+				<li><a href="#">礼仪</a></li>
+				<li><a href="#">行政</a></li>
+				<li><a href="#">前台</a></li>
+				<li><a href="#">模特</a></li>
+			</ul>
+		</div>
+		<div class="mainlist">
+			<ul class="left_menu">
+				<li><img src="images/qiyezhonglilogo.png" /><a href="enterpriseInfoA.html">企业中心</a></li>
+				<li><img src="images/qiyexinxilogo.png" /><a href="enterpriseInfoA.html">企业信息</a></li>
+				<li><img src="images/qiyerencaidingdan.png" /><a href="enterpriseTalentOrder.html">人才订单</a></li>
+				<li><img src="images/qiyefuwudingdan.png" /><a href="enterpriseSerOrderA.html">服务订单</a></li>
+				<li class="current"><img src="images/zhanghushezhi.png" /><a href="enterpriseAccount.html">账户设置</a></li>
+				<li><img src="images/qiyemeicaishoucang.png" /><a href="enterpriseCollect.html">美才收藏</a></li>
+			</ul>
+			<!--当前账户-->
+			<div class="zhanghushezhi" class="boxe">
+				<div class="boxea">
+			        <p class="boxetext">当前登录账户：<span class="zhanghu">15527502180</span></p>
+			        <p class="boxetext">可用余额：<span class="keyongyue">456</span> 美分</p>
+			        <a href="enterpriseAccount.html" class="chongzhi">充值</a>
+			       <hr class="hengxian"/>
+	    		</div>
+		        <!--第一个-->
+		        <div id="zhifufangshi">
+			        <div class="zhifubao">
+			        	支付宝
+			        </div>
+			      	<input type="checkbox" id="zhifubao" class="checkbox" onchange="checkzhifu()" />
+		      	<!--点击勾选出现下方2个支付方式-->
+			        <div class="yinhangka">
+			        	银行卡
+			        </div>
+			      	<input type="checkbox" id="yinhangka" class="checkbox" onchange="checkzhifu()" />
+		      	<!--点击勾选出现各大银行支付方式-->
+				</div>			 
+				<!--第二个-->
+				<div id="zhifubaozhifu" class="boxeno">
+				     <div class="zhifubao">
+			        	支付宝
+			        </div>
+			        <div class="zhifujine">
+			        	支付金额<span>&nbsp;99&nbsp;</span>元
+			        </div>        
+			        <div class="erweima">
+			        	<img src="images/erweima.png">
+			        </div>
+			        <div class="huo">
+			        	或
+			        </div>
+			        <div class="diannao">
+			        	<div class="lijizhifu">
+			            	<a href="#">立即支付</a>
+			            </div>
+			        </div>
+			        <div class="yinhangka">
+			        	银行卡
+			        </div>
+			      	<input type="checkbox" id="yinhangka" class="checkyinhang" onchange="checkzhifu()" />
+			      	<!--点击勾选出现各大银行支付方式-->
+				</div>
+				<!--第三个-->
+				<div id="yinhangkazhifu" class="boxeno">
+		        	<div class="zhifubao">
+		        		支付宝
+		        	</div>
+		        	<input type="checkbox" id="zhifubao" class="checkbox" onchange="checkzhifu()" >
+			        <div class="yinhangbox">
+			        	<div class="yinhangka">
+			        		银行卡
+			        	</div>
+			        	<div class="zhifujin">
+			        		支付金额<span>&nbsp;99&nbsp;</span>元
+			        	</div>
+			    	</div>
+			    	<table class="wangyin">
+			    		<tr>
+			    			<td><a href="#"><img src="images/gonghang.png"></a></td>
+			    			<td><a href="#"><img src="images/jianhang.png"></a></td>
+			    			<td><a href="#"><img src="images/zhaohang.png"></a></td>
+			    		</tr>
+			    		<tr>
+			    			<td><a href="#"><img src="images/jiaohang.png"></a></td>
+			    			<td><a href="#"><img src="images/nonghang.png"></a></td>
+			    			<td><a href="#"><img src="images/fahang.png"></a></td>
+			    		</tr>
+			    		<tr>
+			    			<td><a href="#"><img src="images/zhonghang.png"></a></td>
+			    			<td><a href="#"><img src="images/huahang.png"></a></td>
+			    			<td><a href="#"><img src="images/youzheng.png"></a></td>
+			    		</tr>
+			    		<tr>
+			    			<td><a href="#"><img src="images/pufa.png"></a></td>
+			    			<td><a href="#"><img src="images/zhonghang.png"></a></td>
+			    			<td><a href="#"><img src="images/pingan.png"></a></td>
+			    		</tr>
+			    		<tr>
+			    			<td><a href="#"><img src="images/mingsheng.png"></a></td>
+			    			<td><a href="#"><img src="images/guangda.png"></a></td>
+			    			<td><span><a href="#" class="more">更多银行</a></span></td>
+			    		</tr>
+			    	</table>
+				</div>					
+			</div> 
+		</div> 
+	</div>
+	<!--main end-->
+	<div id="footer">
+		<div class="copyright">
+			<p>Copyright © 2015 <a href="index.html">www.51meicai.com</a> 版权所有 鄂ICP备14003297号-1</p>
+		</div>
+	</div>
+	<!--footer end-->
+</div>
+</body>
+</html>

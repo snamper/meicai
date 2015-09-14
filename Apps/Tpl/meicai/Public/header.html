@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{$title}</title>
+    <meta name="keywords" content="{$keywords}" />
+    <meta name="description" content="{$description}" />
+    <link rel="stylesheet" href="./Public/css/newmeicai.css" type="text/css" />
+    <script type="text/javascript" src="./Public/js/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="./Public/js/meicai_index.js"></script>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <div class="header_top">
+            <div class="login_reg">
+                <a href="{:U('Member/login')}">登录</a>
+                <span>|</span>
+                <a href="{:U('Member/register')}">注册</a>
+            </div>
+            <div class="logo">
+                <a href="index.html"><img src="./Public/images/meicaixinlogo.png" class="indexlogo"/><span>美才网</span></a>
+            </div>
+            <ul class="head_ul">
+                <li><a href="/">首页</a></li>
+                <li><a href="{:U('Meicai/index')}">美才库</a></li>
+                <li class="dianbo"><a href="#">点拨</a><img src="./Public/images/sirenzhiku.png" class="sirenzhiku indexsirenzhiku" /></li>
+                <li><a href="#">签约导师</a></li>
+            </ul>
+        </div>
+        <div id="banner">
+            <img src="./Public/images/haibao.png" />
+        </div>
+    </div>
+    <!--header end-->

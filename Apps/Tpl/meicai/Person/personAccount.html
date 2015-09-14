@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人中心账户设置</title>
+	<link rel="stylesheet" href="css/newmeicai.css" type="text/css" charset="gb2312" />
+	<script type="text/javascript" src="js/newmeicai.js"></script>
+</head>
+<body>
+<div id="container">
+	<div class="kefu_top">客服：400-800-8050</div>
+	<div id="header" class="header_bg">
+		<div class="header_top">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" /><span>美才网</span></a>
+			</div>
+			<ul class="head_ul">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="meicaiku.html">美才库</a></li>
+				<li class="dianbo"><a href="#">点拨</a><img src="images/sirenzhiku.png" class="sirenzhiku" /></li>
+				<li><a href="mentorApply.html">签约导师</a></li>
+			</ul>
+			<div class="head_yonghu">			
+				<div class="yonghu">
+		            <a href="personResume.html">
+		            	<img src="images/yonghutubiao.png"><span>15527502180</span>
+		            </a>
+				</div>
+		    	<ul class="xiala">
+		    		<li><img src="images/xiala.png" />
+		    		    <ul id="xialamenu">
+			            	<li><a href="personMyjob.html">我的工作</a></li>
+			            	<li><a href="personSerOrder.html">服务订单</a></li>
+			            	<li><a href="personAccount.html">账户设置</a></li>
+			            	<li><a href="login.html">退出账号</a></li>
+			            </ul>
+		    		</li>
+		    	</ul>
+		    </div>				
+		</div>
+	</div>
+	<!--header end-->
+	<div id="main">
+		<div class="nav">
+			<ul id="nav">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="meicaiku.html">美才库</a></li>
+				<li><a href="#">助理</a></li>
+				<li><a href="#">秘书</a></li>
+				<li><a href="#">文员</a></li>
+				<li><a href="#">市场</a></li>
+				<li><a href="#">销售</a></li>
+				<li><a href="#">礼仪</a></li>
+				<li><a href="#">行政</a></li>
+				<li><a href="#">前台</a></li>
+				<li><a href="#">模特</a></li>
+			</ul>
+		</div>
+		<div class="mainlist">
+			<ul class="left_menu">
+				<li><img src="images/gerenzhongxinlogo.png"><a href="personResume.html">个人中心</a></li>
+				<li><img src="images/tianxiejianlilogo.png"><a href="personResume.html">简历填写</a></li>
+				<li><img src="images/wodegongzuologo.png"><a href="personMyjob.html">我的工作</a></li>
+				<li><img src="images/gerenzhongxinfuwudingdan.png"><a href="personSerOrder.html">服务订单</a></li>
+				<li class="current"><img src="images/zhanghushezhi.png"><a href="personAccount.html">账户设置</a></li>
+			</ul>
+			<div class="zhanghushezhi">
+				<!--当前账户-->
+				<div class="boxa">
+			        <p>当前登录账户：<span>15527502180</span></p>
+			        <p>可用余额：<span class="keyongyue">456</span> 美分</p>
+			        <a href="personAccountCharge.html" class="chongzhi">充值</a>
+			    </div>
+			    <!--消费记录-->
+		 		<div class="boxb" id="shezhia">
+			    	消费记录<a class="chakan" onclick="zhankaia()">查看</a>
+			    </div>
+			    <div class="boxba" id="shouqia">
+			    	消费记录
+			        <a class="chakan" onclick="shouqia()">收起</a>
+			        <table class="xiaofeijilu">
+			        	<tr>
+			        		<td>消费类型</td>
+			        		<td>消费美分</td>
+			        		<td>消费时间</td>
+			        		<td>状态</td>
+			        		<td>操作</td>
+			        	</tr>
+			        	<tr>
+			        		<td>简历上架</td>
+			        		<td>1.00</td>
+			        		<td>2015.7.28</td>
+			        		<td>已完成</td>
+			        		<td><a href="#" class="shuaxin">刷新简历</a></td>
+			        	</tr>
+			        	<tr>
+			        		<td>形象改造</td>
+			        		<td>2280.00</td>
+			        		<td>2015.7.28</td>
+			        		<td>已完成</td>
+			        		<td><a href="#" class="shuaxin">其他课程</a></td>
+			        	</tr>
+			        	<tr>
+			        		<td>职场礼仪</td>
+			        		<td>1.00</td>
+			        		<td>2015.7.28</td>
+			        		<td>已完成</td>
+			        		<td><a href="#" class="shuaxin">其他课程</a></td>
+			        	</tr>
+			        	<tr>
+			        		<td>简历上架</td>
+			        		<td>1.00</td>
+			        		<td>2015.7.28</td>
+			        		<td>已完成</td>
+			        		<td><a href="#" class="shuaxin">刷新简历</a></td>
+			        	</tr>
+			        	<tr>
+			        		<td>简历上架</td>
+			        		<td>1.00</td>
+			        		<td>2015.7.28</td>
+			        		<td>已完成</td>
+			        		<td><a href="#" class="shuaxin">刷新简历</a></td>
+			        	</tr>
+			        </table>
+					<ul class="page pagea">
+						<li class="wenzipage"><a href="#">首页</a></li>
+						<li class="wenzipage"><a href="#">上一页</a></li>
+						<li class="pagenum"><a href="#">1</a></li>
+						<li class="pagenum"><a href="#">2</a></li>
+						<li class="pagenum"><a href="#">3</a></li>
+						<li class="pagenum"><a href="#">4</a></li>
+						<li class="wenzipage"><a href="#">下一页</a></li>
+						<li class="wenzipage"><a href="#">末页</a></li>
+					</ul>			    
+		    	</div>	
+				<!--密码修改-->
+		    	<div class="boxc" id="shezhib">
+			    	<div class="boxctexta">
+			        	密码修改
+			        </div>
+		           <div class="boxctextb">
+			        	<div class="mimaanquandu">密码安全度</div>
+			        </div>
+			        <div class="qiangdu"></div>
+			        <div class="chengse" name="safechengse"></div>
+			        <div class="baise" name="safebaise"></div>
+			        <a class="chakan" onclick="zhankaib()">
+			            设置
+			        </a>
+			        <div class="boxctextc">
+			        	绑定手机
+			        </div>
+			        <div class="boxctextd">
+			        	未绑定
+			        </div>
+			        <a class="chakan" onclick="zhankaic()">
+			        	设置
+			        </a>		    	
+				</div>
+				<!--密码2-->
+			    <div class="boxca"  id="shouqib">
+			    	<div class="boxctexta">
+			        	密码修改
+			        </div>
+			        <a class="chakan" id="shouqib" onclick="shouqib()">
+			            收起
+			        </a>
+			        <div class="renzhengbox xiugaimima">
+			        	<p><span>当前密码<span><input type="text" id="curmima" onchange="mimaSafe()" /></p>
+			        	<p><span>&nbsp;&nbsp;&nbsp;新密码<span><input type="text" /></p>
+			        	<p><span>确认密码<span><input type="text" /></p>
+			            <a href="#" class="queding baocun">保存</a>
+			        </div>
+			        <div class="boxctextc boxcatextc">
+			        	绑定手机
+			        </div>
+			        <div class="boxctextd  boxcatextc">
+			        	未绑定
+			        </div>
+			        <a class="chakan boxcatextc" onclick="zhankaic()">
+			        	设置
+			        </a>
+			    </div>	
+			    <!--密码修改3开始-->
+			    <div class="boxcb" id="shouqic">
+			    	<div class="boxctexta">
+			        	密码修改
+			        </div>
+			        <div class="boxctextb">
+			        	<div class="mimaanquandu">密码安全度</div>
+			        </div>
+			        <div class="qiangdu"></div>
+			        <div class="chengse" name="safechengse"></div>
+			        <div class="baise" name="safebaise"></div>
+			        <a class="chakan" onclick="zhankaib()">
+			            设置
+			        </a>
+			        <div class="boxctextc">
+			        	绑定手机
+			        </div>
+			        <a class="chakan" onclick="shouqic()">
+			        	收起
+			        </a>
+			        <div class="renzhengbox xiugaimima bangding">
+			        	<p><span>输入手机号码<span><input type="text" id="curmima" onchange="mimaSafe()" /></p>
+			             <div class="yanzhengma">
+			             	<a href="#">获取验证码</a><!--点击按钮给手机号发送验证码-->
+			             </div>
+			            <p><span>&nbsp;&nbsp;&nbsp;输入验证码<span><input type="text" /></p>
+			            <a href="#" class="queding baocun">保存</a>
+			        </div>
+			    </div>		    		
+			    <!--认证管理1开始-->
+			    <div class="boxd" id="shezhic">
+			    	<div class="boxdtext">
+			        	认证管理
+			        </div>
+			        <a class="chakan boxdshezhi" onclick="zhankaid()">设置</a>
+			    </div>
+
+			    <!--认证管理2开始-->
+			    <div class="boxda" id="shouqid">
+			    	<div class="boxdtext">
+			        	认证管理
+			        </div>
+			        <a class="renzhengshouqi" onclick="shouqid()">
+			        	收起
+			        </a>
+			        <div class="renzhengbox personrenzheng">
+			        	<p><span>真实姓名<span><input type="text" /></p>
+			        	<p><span class="a">身份证号码<span><input type="text" /></p>
+			        	<p><span class="b">确认身份证号码<span><input type="text" /></p>
+			            <a href="#" class="queding personqueding">确定</a>
+			        </div>
+			    </div>
+			    <!--认证管理结束--> 		    
+			</div>
+		</div>
+	</div>
+	<!--main end-->
+	<div id="footer">
+		<div class="copyright">
+			<p>Copyright © 2015 <a href="index.html">www.51meicai.com</a> 版权所有 鄂ICP备14003297号-1</p>
+		</div>
+	</div>
+	<!--footer end-->
+</div>
+</body>
+</html>

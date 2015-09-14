@@ -1,0 +1,12 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title></title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel='stylesheet' type="text/css" href="../Public/css/style.css" /><script type="text/javascript" src="../Public/js/jquery-1.7.1.min.js"></script><script type="text/javascript" src="../Public/js/common.js"></script><script type="text/javascript" src="../Public/js/jquery-yufu5.js"></script><script type="text/javascript">            $(function(){
+                if($.browser.msie&&$.browser.version=="6.0"&&$("html")[0].scrollHeight>$("html").height())
+                    $("html").css("overflowY","scroll");
+            });
+        </script><script language="JavaScript"><!--
+        //指定当前组模块URL地址 
+        var URL = '__URL__';
+        var APP	 = '__APP__';
+        var SELF='__SELF__';
+        var PUBLIC='__PUBLIC__';
+        var Public = '../Public/';
+        //--></script><script type="text/javascript" src="../Public/ueditor/editor_config.js"></script><script type="text/javascript" src="../Public/ueditor/editor_all.js"></script></head><body><div class="main"><div class="box_tit"><h2>数据恢复</h2></div><div class="list"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr class="nbg"><th><input type="checkbox" id="check"></th><th>文件名称</th><th>文件大小</th><th>备份时间</th><th>操作</th></tr><?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr><td><input type="checkbox" name="key" value="<?php echo ($vo["id"]); ?>"></td><td><?php echo ($vo["name"]); ?></td><td><?php echo ($vo["size"]); ?></td><td><?php echo ($vo["time"]); ?></td><td><a href="<?php echo U('Datarecover/recover',array('file'=>$vo['name']));?>">数据恢复</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="<?php echo U('Datarecover/deletebak',array('file'=>$vo['name']));?>">删除</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="<?php echo U('Datarecover/downloadBak',array('file'=>$vo['name']));?>">下载</a></td></tr><?php endforeach; endif; else: echo "" ;endif; ?></tbody></table><div class="th" style="clear: both;"></div></div></div></body></html>
