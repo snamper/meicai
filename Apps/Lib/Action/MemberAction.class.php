@@ -22,18 +22,23 @@ class MemberAction extends CommonAction {
         // 检查帐号
     public function checkAccount() {
        if($_POST){
+        // dump($_POST);
           $data['role_id'] = $_POST['type'];
           $data['email'] = $_POST['email'];
           $data['phone'] = $_POST['phone'];
           $data['password'] = md5($_POST['password']);
-          $data['create_time'] = date("Y-m-d H:i:s",time());
           $mess = array();
           $where['email']=$_POST['email'];
+          $where['role_id'] = $_POST['type'];
           $result = M('Member')->where($where)->count();
+          // dump($data);
+          // dump($result);
           if($result){
                 $mess['status'] = 1;
             }else{
                 $rst = M('Member')->add($data);
+                // dump($rst);
+                // exit;
                 if($rst){
                     $mess['status'] = 2;
                 }else{
@@ -45,6 +50,8 @@ class MemberAction extends CommonAction {
     }
     // 用户登录页面
     public function login() {
+        // dump($_SESSION);
+        // exit;
         if(isset($_SESSION['account'])) {
             $this->redirect('Member/index');
         }else{
@@ -59,9 +66,8 @@ class MemberAction extends CommonAction {
         $type = $_POST['type'];
         $password = md5($_POST['password']);
         $Member=M('Member');
-        $where['email'] = $email;
-        $where['phone'] = $email;
-        $where['_logic'] = 'OR';
+        $where['role_id'] = $type;
+        $where['_query'] = 'phone='.$email.'&email='.$email.'&_logic=or';
         $authInfo=$Member->where($where)->find();
         $mess = array();
         //使用用户名、密码和状态的方式进行认证
